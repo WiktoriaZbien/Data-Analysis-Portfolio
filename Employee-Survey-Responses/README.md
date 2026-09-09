@@ -130,6 +130,16 @@ By mapping Response as an aggregated average against the newly created Job_Role 
 
 ## Step 3: Exploratory Data Analysis
 
+* Overall Satisfaction & Top/Bottom Drivers:<br>
+
+* High Alignment on Work Expectations:<br>
+Standardized metrics show high agreement across all department groups and job roles regarding clear expectations, with averages consistently ranging between 3.2 and 3.8. Respondents universally understand their basic roles and requirements.
+
+* Anomalies in Organization Mission Alignment:<br>
+While "The mission or purpose of our organization makes me feel my job is important" scored strongly across most organizational groups (3.0–3.8), the Public Safety & Legal department exhibited a noticeable drop, averaging only 2.9–3.1. This highlights a critical disconnect in organizational alignment within legal and public safety functions.
+
+* Perception Gap Across Department Groups:<br>
+The [heatmap](#heatmap) reveals a distinct Perception Gap between leadership and frontline personnel. Directors and Managers systematically rate growth opportunities (7. This last year, I have had opportunities at work to learn and grow) and inclusive environments (9. My department is inclusive and demonstrates support of a diverse workforce) higher—averaging around 3.4—compared to frontline Staff, who average only 2.6. Once again, the Public Safety & Legal department trails all other operational groups, posting the lowest overall scores (2.6–3.3).
 ---
 
 ## Step 4: Interactive Dashboard & Visualizations
