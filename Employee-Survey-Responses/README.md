@@ -139,11 +139,24 @@ Standardized metrics show high agreement across all department groups and job ro
 While "The mission or purpose of our organization makes me feel my job is important" scored strongly across most organizational groups (3.0–3.8), the Public Safety & Legal department exhibited a noticeable drop, averaging only 2.9–3.1. This highlights a critical disconnect in organizational alignment within legal and public safety functions.
 
 * Perception Gap Across Department Groups:<br>
-The [heatmap](#heatmap) reveals a distinct Perception Gap between leadership and frontline personnel. Directors and Managers systematically rate growth opportunities (7. This last year, I have had opportunities at work to learn and grow) and inclusive environments (9. My department is inclusive and demonstrates support of a diverse workforce) higher—averaging around 3.4—compared to frontline Staff, who average only 2.6. Once again, the Public Safety & Legal department trails all other operational groups, posting the lowest overall scores (2.6–3.3).
+The [Heatmap](#heatmap) reveals a distinct Perception Gap between leadership and frontline personnel. Directors and Managers systematically rate growth opportunities (7. This last year, I have had opportunities at work to learn and grow) and inclusive environments (9. My department is inclusive and demonstrates support of a diverse workforce) higher—averaging around 3.4—compared to frontline Staff, who average only 2.6. Once again, the Public Safety & Legal department trails all other operational groups, posting the lowest overall scores (2.6–3.3).
 ---
 
 ## Step 4: Interactive Dashboard & Visualizations
 
+To make the survey data actionable for executive leadership, I designed an interactive dashboard in IBM Cognos Analytics focused on high-level engagement trends and deep-dive filtering.
+
+### Heatmap
+![Executive Dashboard](HeatMap.jpg)
+
+* **Key Slicers:** Dynamic filtering by `Department_Group` and completion status.
+* **Color Formatting:** Highlights perception gaps between frontline `Staff` and executive leadership (`Directors`/`Managers`).
+
+### 2. Departmental Divergence Analysis
+![Departmental Analysis](StackedBar.jpg)
+
+![Demographics](Demographics.jpg)
+* **Key Insights Visualized:** Directly pinpoints the engagement drop within the **Public Safety & Legal** department across critical questions.
 ---
 
 ## Key Findings & Actionable Recommendations
