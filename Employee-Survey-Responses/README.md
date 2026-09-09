@@ -2,26 +2,30 @@
 
 ## Objective
 
-In this project, I designed and implemented an end-to-end Business Intelligence solution in IBM Cognos Analytics to evaluate employee survey responses across Pierce County, WA.
+In this project, I designed and implemented an end-to-end Business Intelligence solution in IBM Cognos Analytics to evaluate employee engagement survey responses across Pierce County, WA.
 
-1. Extracted and cleaned raw employee engagement survey data using Cognos Data Modules.
-2. Transformed text-based Likert responses into numeric float values (`1.0` - `4.0` scale) while filtering out invalid records ($0$ / N/A responses) using `CAST` and `CASE` functions.
-3. Modeled categorical dimensions by grouping 20+ granular operational units into 4 broad functional department groups.
-4. Developed an interactive executive dashboard featuring a sentiment driver heatmap, cross-departmental slicers, and role divergence tracking.
+Data Extraction & Filtering: Extracted raw employee survey data using Cognos Data Modules and filtered the dataset to include only completed survey responses.
 
-As this is a Business Intelligence and Data Modeling project, my emphasis is primarily on the analytics architecture, data transformation logic, and executive-level dashboard visualization.
+Data Transformation & Cleansing: Transformed text-based Likert responses into numeric values (1.0 - 4.0 scale), standardizing survey question labels (e.g., resolving duplicate variations of Question 7) and creating shorthand metric labels for cleaner visualization.
 
-The sections below explain additional details on the dataset, methodologies, and business insights.
+Dimensional Modeling & Aggregation: Modeled categorical dimensions using Custom SQL / Data Modules by mapping individual Job Role flags into a unified hierarchy and consolidating 20+ granular operational departments into 4 broad functional groups.
+
+Dashboard & Visualization: Developed an interactive executive dashboard featuring cross-departmental slicers, role divergence tracking, and key sentiment drivers to analyze engagement patterns across the organization.
+
+As a Business Intelligence and Data Modeling project, the primary focus is on analytics architecture, SQL data transformation logic, and executive-level reporting.
+
+The sections below outline the dataset details, technical methodologies, and key business insights.
 
 ---
 
 ## Table of Content
 
 - [Dataset Used](#dataset-used)
-- [Recommended Business Analysis](#recommended-business-analysis)
 - [Technologies Used](#technologies-used)
-- [Data Modeling & Transformation](#data-modeling--transformation)
-- [Dashboard Screenshots](#dashboard-screenshots)
+- [Step 1: Data Cleaning & Transformation](#step-1-data-cleaning--transformation)
+- [Step 2: Data Modeling & Metric Definitions](#step-2-data-modeling--metric-definitions)
+- [Step 3: Exploratory Data Analysis](#step-3-exploratory-data-analysis)
+- [Step 4: Interactive Dashboard & Visualizations](#step-4-interactive-dashboard--visualizations)
 - [Key Findings & Actionable Recommendations](#key-findings--actionable-recommendations)
 
 ---
@@ -35,16 +39,6 @@ The sections below explain additional details on the dataset, methodologies, and
 
 ---
 
-## Recommended Business Analysis
-
-This project specifically resolves three primary business questions:
-
-* **Question Driver Analysis:** Which survey questions and engagement drivers did respondents agree with or disagree with most?
-* **Hierarchy & Departmental Trends:** Are there clear patterns, sentiment trends, or perception gaps between management roles (`Directors`, `Managers`) and frontline `Staff` across business units?
-* **Actionable Next Steps:** As an employer, what strategic steps should be taken to improve employee retention and satisfaction based on driver divergence?
-
----
-
 ## Technologies Used
 
 * **BI Platform:** IBM Cognos Analytics
@@ -53,14 +47,33 @@ This project specifically resolves three primary business questions:
 
 ---
 
-## Data Modeling & Transformation
+## Step 1: Data Cleaning & Transformation
 
-To calculate weighted averages across survey questions, custom calculated fields were created within the Data Module:
 
-* **Handling Nulls & Non-Numeric Responses:**
-```sql
-CASE 
-  WHEN [Response_Text] IN ('1', '2', '3', '4') 
-    THEN CAST([Response_Text] AS FLOAT)
-  ELSE NULL 
-END
+This project specifically resolves three primary business questions:
+* **Question Driver Analysis:** Which survey questions and engagement drivers did respondents agree with or disagree with most?
+* **Hierarchy & Departmental Trends:** Are there clear patterns, sentiment trends, or perception gaps between management roles (`Directors`, `Managers`) and frontline `Staff` across business units?
+* **Actionable Next Steps:** As an employer, what strategic steps should be taken to improve employee retention and satisfaction based on driver divergence?
+
+---
+
+## Step 2: Data Modeling & Metric Definitions
+
+* **BI Platform:** IBM Cognos Analytics
+* **Data Transformation:** IBM Cognos Data Modules (Custom Calculations, Type Casting, Aggregations)
+* **Querying:** Custom SQL Expression Logic (`CASE` / `CAST`)
+
+---
+
+## Step 3: Exploratory Data Analysis
+
+---
+
+## Step 4: Interactive Dashboard & Visualizations
+
+---
+
+## Key Findings & Actionable Recommendations
+
+---
+
