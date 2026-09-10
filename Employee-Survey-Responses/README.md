@@ -149,7 +149,7 @@ Key Trends & Patterns Across Roles and Departments:<br>
 
 To make the survey data actionable for executive leadership, I designed an interactive dashboard in IBM Cognos Analytics focused on high-level engagement trends and deep-dive filtering.
 
-Chart 1: Demographics & Response Distribution Dashboard
+### Chart 1: Demographics & Response Distribution Dashboard
 
 To establish a clear baseline of respondent demographics and data coverage, I created a functional dashboard filtered specifically for completed surveys. This dashboard provides leadership with a transparent overview of sample sizes, job role representation, and departmental breakdowns across the organization.
 
@@ -178,41 +178,98 @@ Corporate & Administrative Support: Captured internal support and central admini
 
 Other: Encompassed specialized or unassigned roles across the organization.
 
-Chart 2: Diverging Stacked Bar Chart (Overall Survey Responses)
+### Chart 2: Heatmap (Average Response Score by Job Role)
 
-Purpose: Provides a comprehensive breakdown of sentiment distribution for each survey question, allowing leadership to instantly identify top drivers and pain points across the organization.
+* Purpose & Design:<br>
+This visualization maps the average response scores across each survey question against primary organizational roles (Director, Manager, Supervisor, Staff, and Other). The color intensity reflects satisfaction levels, where darker shades represent higher agreement scores and lighter shades indicate lower sentiment or potential areas of concern.
 
-Key Visual Insights:
-
-Highlights Question 1 (Clear Expectations) as the primary strength, showing massive agreement (1,341 positive responses out of 1,453).
-
-Pinpoints Question 3 (Recognition / Praise) as the primary concern, showing the highest proportion of combined "Disagree" and "Strongly Disagree" responses (495 out of 1,456).
-
-Chart 2: Heatmap (Average Response Score by Job Role)
-
-Purpose: Visualizes perception gaps across organizational levels—from Directors to frontline Staff—by mapping average response scores to color intensity.
-
-Key Visual Insights:
-
-Displays a noticeable drop in saturation moving from left (Directors) to right (Staff), confirming lower satisfaction among frontline employees.
-
-Highlights Question 6 (Best friend at work) in a distinct light shade across leadership roles, revealing lower social connection scores among managers compared to lower-level staff.
-
-Key Slicers & Formatting: Includes dynamic filtering by Department_Group and completion status to enable department-by-department deep dives.
-### Heatmap
 ![Executive Dashboard](./Dashboard/HeatMap.jpg)
 
-* **Key Slicers:** Dynamic filtering by `Department_Group` and completion status.
-* **Color Formatting:** Highlights perception gaps between frontline `Staff` and executive leadership (`Directors`/`Managers`).
+Key Analytical Findings:
 
-### 2. Departmental Divergence Analysis
-![Departmental Analysis](StackedBar.jpg)
+* Hierarchical Perception Gap:<br>
+There is a distinct horizontal gradient across most engagement questions. Leadership roles (Directors and Managers) consistently display darker tones—indicating higher average scores in areas like 7. Learn & Grow, 5. Mission & Purpose, and 9. Inclusive department. In contrast, frontline Staff exhibit lighter shades across the board, revealing lower overall satisfaction and perceived growth opportunities.
 
-![Demographics](Demographics.jpg)
-* **Key Insights Visualized:** Directly pinpoints the engagement drop within the **Public Safety & Legal** department across critical questions.
----
+* Social Connection Outlier:<br>
+Question 6 (Best friend at work) stands out as an organizational anomaly. It displays the lightest shading on the entire matrix, particularly among Directors and Managers. This highlights a noticeable lack of close social connections within executive and management tiers compared to operational roles.
+
+Universal Areas of High & Low Sentiment:
+
+* Strong Baseline: Question 1 (Clear Expectations) remains consistently dark across all job roles, confirming that clear role definitions are a company-wide strength regardless of seniority.
+
+* Shared Pain Point: Question 3 (Recognition / Praise) shows lighter saturation across both frontline staff and management, signaling a widespread need for improved recognition programs across all organizational levels.
+
+Interactive Features:
+The top dropdown filter (Department Group) allows stakeholders to isolate specific divisions (e.g., Public Safety & Legal vs. Public Works) to observe how role dynamics shift across different departments.
+
+Comparing the heatmaps between Public Safety & Legal 
+
+![Executive Dashboard](./Dashboard/HeatMap_PublicSafety&Legal.jpg)
+
+and Public Works & Operations highlights several distinct organizational trends.
+
+![Executive Dashboard](./Dashboard/HeatMap_PublicWorks&Operations.jpg)
+
+Departmental Comparative Analysis: Public Safety & Legal vs. Public Works & Operations
+
+* Overall Satisfaction Contrast:
+
+Public Works & Operations: Displays consistently high satisfaction across almost all roles and categories, represented by uniformly dark saturation.
+
+Public Safety & Legal: Shows noticeably lighter shades across the board, confirming it as a primary low-engagement area within the organization.
+
+Accountability & Peer Dynamics Disconnect:
+
+Public Safety & Legal: Displays significant friction regarding peer performance and social connection. Frontline Staff score Question 8 (Accountability) exceptionally low (very light pink shade), and Supervisors post the lowest score for Question 6 (Best friend at work).
+
+Public Works & Operations: Maintains high accountability ratings across all job levels, with relatively steady social connection scores among operational staff.
+
+* Support & Growth Gaps:
+
+Public Safety & Legal: Shows notable dips in Question 3 (Recognition / Praise) across Managers, Supervisors, and "Other" roles, alongside weaker sentiment for Question 7 (Learn & Grow) among frontline Staff.
+
+Public Works & Operations: Management and frontline workers report high satisfaction regarding growth opportunities, supportive leadership (4. Supervisor cares), and overall department inclusiveness.
+
+* Shared Strengths:
+
+Both departments maintain dark shading for Question 1 (Clear Expectations), proving that fundamental role requirements are well understood regardless of division or engagement levels.
+
+### Chart 3: Diverging Stacked Bar Chart (Overall Survey Responses & Departmental Comparison)
+
+* Purpose & Design:
+This chart displays the distribution of sentiment across all ten survey questions using a diverging stacked bar format. It allows leadership to immediately evaluate overall engagement drivers and compare responses when filtering by specific divisions.
+
+![Executive Dashboard](./Dashboard/StackedBar.jpg)
+
+Public Safety & Legal vs. Public Works & Operations
+
+*Key Analytical Findings:
+
+Organization-Wide Baseline (Unfiltered):
+
+Top Driver: Question 1 (Clear Expectations) yields the highest positive sentiment overall, with 846 "Strongly Agree" and 495 "Agree" responses out of 1,453 total.
+
+Primary Friction Point: Question 3 (Recognition / Praise) registers the highest disagreement, totaling 495 negative responses (189 "Strongly Disagree" + 306 "Disagree" out of 1,456).
+
+Departmental Deep Dive — Public Safety & Legal:
+
+![Executive Dashboard](./Dashboard/StackedBar_PublicSafety&Legal.jpg)
+
+Recognition Crisis: Dissatisfaction with appreciation spikes significantly in this division. Question 3 (Recognition / Praise) accounts for 224 negative responses out of 505 (103 "Strongly Disagree" + 121 "Disagree"), representing nearly 44% of respondents in this group.
+
+Accountability Concerns: Question 8 (Accountability) shows a high concentration of negative sentiment, with 167 out of 505 respondents (82 "Strongly Disagree" + 85 "Disagree") expressing frustration over how performance is managed.
+
+Departmental Deep Dive — Public Works & Operations:
+
+![Executive Dashboard](./Dashboard/StackedBar_PublicWorks&Operations.jpg)
+
+Strong Overall Sentiment: Positive responses ("Agree" + "Strongly Agree") consistently dominate across most questions. Question 4 (Supervisor cares) performs exceptionally well, with 518 positive responses out of 586 (253 "Agree" + 265 "Strongly Agree").
+
+Targeted Pain Point: Disagreement remains low across most categories, though Question 6 (Best friend at work) records the highest proportion of negative sentiment within this department (266 out of 584 combined negative responses).
 
 ## Key Findings & Actionable Recommendations
+
+
 
 ---
 
