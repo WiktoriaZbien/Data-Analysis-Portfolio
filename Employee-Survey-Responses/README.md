@@ -269,7 +269,43 @@ Targeted Pain Point: Disagreement remains low across most categories, though Que
 
 ## Key Findings & Actionable Recommendations
 
+This section synthesizes the analysis of overall sentiment, role-based dynamics, and departmental comparisons into strategic imperatives for executive leadership.
 
+Key Findings
+
+* Clear Expectations as an Organizational Anchor: Question 1 (Clear Expectations) serves as a foundation across all departments and job roles, generating 1341 positive responses out of 1453 overall. Employees universally understand their day-to-day requirements.
+
+* Systemic Gap in Recognition: Question 3 (Recognition / Praise) represents the single largest pain point across the organization, with 495 negative responses (34% overall). This concern escalates dramatically within Public Safety & Legal, where nearly 44% of respondents expressed dissatisfaction.
+
+* Hierarchical Perception Gap: Heatmap analysis reveals a clear top-down divergence. Executive leadership (Directors and Managers) consistently report higher scores for growth opportunities (Learn & Grow) and departmental support (Inclusive department), whereas frontline Staff show lighter sentiment across all categories.
+
+* Departmental Divergence: Public Works & Operations demonstrates strong overall satisfaction and leadership support (4. Supervisor cares). Conversely, Public Safety & Legal lags significantly across operational metrics, showing severe friction around peer performance (8. Accountability) and social connection.
+
+Actionable Recommendations
+
+Establish Structured Praise & Recognition Mechanisms
+
+* Target: Address company-wide dissatisfaction with Question 3 (Recognition / Praise).
+
+* Action: Implement structured peer-to-peer appreciation programs and mandate regular non-monetary recognition during team check-ins. Focus rollout efforts immediately on Public Safety & Legal.
+
+Targeted Interventions for Public Safety & Legal
+
+* Target: Resolve severe dips in mission alignment, accountability, and overall satisfaction.
+
+* Action: Conduct targeted listening sessions and pulse surveys within this division. Clear leadership frameworks must be established to ensure fair accountability (Question 8) and strengthen departmental purpose (Question 5).
+
+Bridge the Frontline-Leadership Sentiment Gap
+
+* Target: Close the perception gap between executive management and frontline staff.
+
+* Action: Expand professional development pathways (Question 7) specifically tailored for frontline workers. Ensure managers actively solicit feedback to ensure staff feel supported and included (Question 9).
+
+Foster Social Connection & Leadership Wellbeing
+
+* Target: Counter high social isolation scores (Question 6) among Directors and Managers.
+
+* Action: Create cross-functional leadership cohorts and internal peer support networks to build stronger social connections and executive resilience.
 
 ---
 
