@@ -36,7 +36,7 @@ The sections below outline the dataset details, technical methodologies, and key
 * **Domain:** HR Analytics & Employee Sentiment
 * **Structure:** Entity-Attribute-Value (EAV) Survey Data Model
 * **Volume(Raw):** 499 records x 25 fields
-* **Volume(Transformed): 14,590 processed response values
+* **Volume(Transformed): 1,459 processed response values
 
 ---
 
@@ -130,24 +130,77 @@ By mapping Response as an aggregated average against the newly created Job_Role 
 
 ## Step 3: Exploratory Data Analysis
 
-* Overall Satisfaction & Top/Bottom Drivers:<br>
+Highest & Lowest Agreement Questions:<br>
 
-* High Alignment on Work Expectations:<br>
-Standardized metrics show high agreement across all department groups and job roles regarding clear expectations, with averages consistently ranging between 3.2 and 3.8. Respondents universally understand their basic roles and requirements.
+* Most Agreed: Question 1 (Clear Expectations) received the highest agreement overall, with 846 respondents answering "Strongly Agree" and 495 answering "Agree" (totalling 1,341 positive responses out of 1,453). Employees clearly understand their basic roles and requirements.
 
-* Anomalies in Organization Mission Alignment:<br>
-While "The mission or purpose of our organization makes me feel my job is important" scored strongly across most organizational groups (3.0–3.8), the Public Safety & Legal department exhibited a noticeable drop, averaging only 2.9–3.1. This highlights a critical disconnect in organizational alignment within legal and public safety functions.
+* Most Disagreed: Question 3 (Recognition / Praise) recorded the highest level of disagreement, with 189 respondents selecting "Strongly Disagree" and 306 selecting "Disagree" (495 total negative responses out of 1,456).
 
-* Perception Gap Across Department Groups:<br>
-The [Heatmap](#heatmap) reveals a distinct Perception Gap between leadership and frontline personnel. Directors and Managers systematically rate growth opportunities (7. This last year, I have had opportunities at work to learn and grow) and inclusive environments (9. My department is inclusive and demonstrates support of a diverse workforce) higher—averaging around 3.4—compared to frontline Staff, who average only 2.6. Once again, the Public Safety & Legal department trails all other operational groups, posting the lowest overall scores (2.6–3.3).
+Key Trends & Patterns Across Roles and Departments:<br>
+
+* Hierarchical Perception Gap: A clear trend visible in the heatmap shows that satisfaction drops as you move down the organizational hierarchy. Directors and Managers consistently give higher scores across most categories (especially Learn & Grow and Supervisor Cares) compared to frontline Staff, who show lighter heat values (lower average scores).
+
+* Social Connection Outlier: Question 6 (Best friend at work) shows uniquely low scores across management roles (Directors and Managers), indicating that leadership feels more socially isolated compared to frontline employees.
+
+* Departmental Lag: As noted in the departmental breakdown, the Public Safety & Legal group systematically trails all other divisions across alignment and satisfaction metrics.
 ---
 
 ## Step 4: Interactive Dashboard & Visualizations
 
 To make the survey data actionable for executive leadership, I designed an interactive dashboard in IBM Cognos Analytics focused on high-level engagement trends and deep-dive filtering.
 
+Chart 1: Demographics & Response Distribution Dashboard
+
+To establish a clear baseline of respondent demographics and data coverage, I created a functional dashboard filtered specifically for completed surveys. This dashboard provides leadership with a transparent overview of sample sizes, job role representation, and departmental breakdowns across the organization.
+
+![Executive Dashboard](./Dashboard/Demographics.jpg)
+
+Key Demographic & Distribution Insights:
+Survey Completion & Data Scope:
+The analysis focuses strictly on fully completed survey responses to ensure high data integrity and accuracy when evaluating engagement drivers.
+
+Dominant Job Roles & Representation:
+
+Most Represented: Frontline Staff made up the largest share of survey respondents, providing a strong operational baseline for company-wide sentiment.
+
+Least Represented: Executive leadership roles (Directors and Managers) accounted for a smaller proportion of overall responses, reflecting standard organizational pyramid structures.
+
+Departmental Breakdown:
+Responses were aggregated into five core operational clusters to analyze cross-departmental sentiment:
+
+Public Works & Operations: Represented a significant portion of frontline operational feedback.
+
+Public Safety & Legal: Identified as a key focus area due to noticeable divergence in alignment and satisfaction scores.
+
+Community & Social Services: Provided insights into customer- and community-facing workforce sentiment.
+
+Corporate & Administrative Support: Captured internal support and central administration perspectives.
+
+Other: Encompassed specialized or unassigned roles across the organization.
+
+Chart 2: Diverging Stacked Bar Chart (Overall Survey Responses)
+
+Purpose: Provides a comprehensive breakdown of sentiment distribution for each survey question, allowing leadership to instantly identify top drivers and pain points across the organization.
+
+Key Visual Insights:
+
+Highlights Question 1 (Clear Expectations) as the primary strength, showing massive agreement (1,341 positive responses out of 1,453).
+
+Pinpoints Question 3 (Recognition / Praise) as the primary concern, showing the highest proportion of combined "Disagree" and "Strongly Disagree" responses (495 out of 1,456).
+
+Chart 2: Heatmap (Average Response Score by Job Role)
+
+Purpose: Visualizes perception gaps across organizational levels—from Directors to frontline Staff—by mapping average response scores to color intensity.
+
+Key Visual Insights:
+
+Displays a noticeable drop in saturation moving from left (Directors) to right (Staff), confirming lower satisfaction among frontline employees.
+
+Highlights Question 6 (Best friend at work) in a distinct light shade across leadership roles, revealing lower social connection scores among managers compared to lower-level staff.
+
+Key Slicers & Formatting: Includes dynamic filtering by Department_Group and completion status to enable department-by-department deep dives.
 ### Heatmap
-![Executive Dashboard](HeatMap.jpg)
+![Executive Dashboard](./Dashboard/HeatMap.jpg)
 
 * **Key Slicers:** Dynamic filtering by `Department_Group` and completion status.
 * **Color Formatting:** Highlights perception gaps between frontline `Staff` and executive leadership (`Directors`/`Managers`).
