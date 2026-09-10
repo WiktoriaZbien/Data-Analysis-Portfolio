@@ -155,17 +155,17 @@ To establish a clear baseline of respondent demographics and data coverage, I cr
 
 ![Executive Dashboard](./Dashboard/Demographics.jpg)
 
-Key Demographic & Distribution Insights:
-Survey Completion & Data Scope:
+Key Demographic & Distribution Insights:<br>
+
+* Survey Completion & Data Scope:<br>
 The analysis focuses strictly on fully completed survey responses to ensure high data integrity and accuracy when evaluating engagement drivers.
 
-Dominant Job Roles & Representation:
+* Dominant Job Roles & Representation:
+Most Represented: Frontline Staff made up the largest share of survey respondents, providing a strong operational baseline for company-wide sentiment.<br>
 
-Most Represented: Frontline Staff made up the largest share of survey respondents, providing a strong operational baseline for company-wide sentiment.
+Least Represented: Executive leadership roles (Directors and Managers) accounted for a smaller proportion of overall responses, reflecting standard organizational pyramid structures.<br>
 
-Least Represented: Executive leadership roles (Directors and Managers) accounted for a smaller proportion of overall responses, reflecting standard organizational pyramid structures.
-
-Departmental Breakdown:
+Departmental Breakdown:<br>
 Responses were aggregated into five core operational clusters to analyze cross-departmental sentiment:
 
 Public Works & Operations: Represented a significant portion of frontline operational feedback.
